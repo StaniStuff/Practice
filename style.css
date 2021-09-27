@@ -1,0 +1,166 @@
+
+html {
+    font-family: 'Red Hat Display', sans-serif; /*I set the font type here*/
+}
+
+
+body {                                                              
+    background-image: url(/images/pattern-background-desktop.svg);/*I set the background size, color*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif; /*Set the font-family again...*/
+    margin: 0;
+    padding: 0; /*Margin, and padding to 0, to fill out the whole page*/
+    box-sizing: border-box; /*To make positioning later easy (I ended up not using it)*/
+    font-size: 100%; /*To make sure every font is a 100% large*/
+    max-width: 1440px; /*The task said the max width should be 1440px*/
+}
+
+.card {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.panel {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 45%;
+    box-shadow: 0px 2px 50px -1px gray;
+}
+
+@media screen and (max-width:576px) {
+    .panel {
+        width: 85%;
+    }    
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .panel {
+        width: 60%;
+    }
+   
+}
+
+@media screen and (min-width:1401px) and (max-width:1920px) {
+    .panel {
+        width: 30%;
+    }
+    
+}
+
+
+.header img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.summary {
+    background-color: white;
+}
+
+.summary-header {
+    font-size: 30px;
+    font-weight: 900;
+    height: 40px;
+    color:hsl(223, 47%, 23%)
+}
+
+.summary-text {
+    margin-bottom: 20px;
+}
+
+.summary-text p {
+    color: hsl(224, 23%, 55%)
+}
+
+.flexbot-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 25px;
+}
+
+.flex-item-1 {
+    height: 45px;
+}
+
+.flex-item-2 p {
+    font-weight: 700;
+}
+
+.flex-item-2 span {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.flex-item-3 {
+    width: 50px;
+}
+
+.flex-item-4 a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: hsla(245, 75%, 52%, 1);
+}
+
+.flex-item-4 a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.8);
+}
+
+.margin {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.payment-btn a {
+    color: white;
+}
+
+.payment-btn:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+    cursor: pointer;
+}
+
+.cancel {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.cancel a {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cancel a:hover {
+    color: hsl(223, 47%, 23%);
+    text-decoration: none !important; 
+    cursor: pointer;
+}
+
+.decor {
+    text-decoration: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

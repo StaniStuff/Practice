@@ -5,33 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
+  <section class="card">
+    <section class="panel">
+      <section class="header">
+        <img src="/images/illustration-hero.svg" alt="Illustration person holding xy">
+      </section>
+      <section class="text">
+        <div class="summary-header">
+          <p>Order Summary</p>
+        </div>
+        <div class="summary-text margin">
+          <p>You can now listen to millions of songs, 
+            audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+        </div>
+        <div class="flexbot-container margin">
+          <div class="flex-item-1"><img src="/images/icon-music.svg" alt="Music logo"></div>
+          <div class="flex-item-2">
+            <p>Annual Plan<span><br> $59.99/year</span></p>
+          </div>
+          <div class="flex-item-3"></div>
+          <div class="flex-item-4">
+            <a href="#">Change</a>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="payment-btn margin">
+            <a href="#" class="decor">Proceed to payment</a>
+          </div>
+          <div class="cancel">
+            <a href="#" class="decor">Cancel order</a>
+          </div>
+        </div>
+      </section>
+    </section> 
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Roland Csontos</a>.
   </div>
 </body>
 </html>
